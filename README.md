@@ -2,7 +2,9 @@
 
 A Zsh helper to auto-correct the current command via ChatGPT.
 
-Just compile the go code to executable. Code is written _badly_ but it does its job:
+Just compile the go code to executable.
+
+~~Code is written _badly_ but it does its job~~ Code is now edited with ChatGPT, since it's better than me in golang 💩
 
 - Looks for an API key in CHATGPT_API_KEY environment variable
 - It accepts one argument, intended to get a whole command inside this argument
