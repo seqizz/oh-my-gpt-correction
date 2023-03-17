@@ -47,6 +47,7 @@ func main() {
 	// No newlines pls
 	trimmed := regexp.MustCompile(`[\t\r\n]+`).ReplaceAllString(strings.TrimSpace(result), "\n")
 	if trimmed == "ZOMK" {
+		// This case is when it could not suggest anything better
 		os.Exit(3)
 	}
 
@@ -56,5 +57,4 @@ func main() {
 	// Print both lines
 	fmt.Println(dmp.DiffPrettyText(diffs))
 	fmt.Println(trimmed)
-	os.Exit(0)
 }
